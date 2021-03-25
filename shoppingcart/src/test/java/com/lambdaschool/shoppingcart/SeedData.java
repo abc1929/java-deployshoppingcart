@@ -1,13 +1,9 @@
 package com.lambdaschool.shoppingcart;
 
 
-import com.github.javafaker.Faker;
-import com.github.javafaker.service.FakeValuesService;
-import com.github.javafaker.service.RandomService;
 import com.lambdaschool.shoppingcart.models.*;
 import com.lambdaschool.shoppingcart.repository.CartItemRepository;
 import com.lambdaschool.shoppingcart.repository.ProductRepository;
-import com.lambdaschool.shoppingcart.services.CartItemService;
 import com.lambdaschool.shoppingcart.services.ProductService;
 import com.lambdaschool.shoppingcart.services.RoleService;
 import com.lambdaschool.shoppingcart.services.UserService;
@@ -16,8 +12,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Locale;
 
 /**
  * SeedData puts both known and random data into the database. It implements CommandLineRunner.

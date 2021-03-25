@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 /**
  * Configures which database we are using based on a property in application.properties
  */
+
 @Configuration
 public class DataSourceConfig
 {
@@ -35,6 +36,7 @@ public class DataSourceConfig
    @Bean
    public DataSource dataSource()
    {
+
       if (dbValue.equalsIgnoreCase("POSTGRESQL"))
       {
          // Assume Heroku
